@@ -1,0 +1,249 @@
+/* webpage.css */
+
+body {
+    margin: 0;
+    font-family: 'Lucida Bright', serif;
+    background-color: #D3DCC6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #8F9E7D;
+    padding: 20px;
+}
+
+.site-title {
+    display: none; /* Hide the site title */
+}
+
+.logo {
+    width: 100%; /* Take full width of the container */
+    position: relative; /* Position relative for positioning text */
+}
+
+.logo img {
+    width: 100%; /* Take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+    position: absolute; /* Position absolute for overlay */
+    top: 50%; /* Place at vertical center */
+    left: 50%; /* Place at horizontal center */
+    transform: translate(-50%, -50%); /* Center text */
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Text color */
+}
+
+.main-nav {
+    margin-top: 10px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    color: #EEECE4;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: none; /* Remove underline */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-title {
+    font-size: 52px;
+    color: #25481B; /* Dark green */
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 28px;
+    color: #25481B; /* Dark green */
+    margin-bottom: 40px;
+}
+
+.image-gallery img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn {
+    display: none;
+}
+
+.card {
+    background-color: #8F9E7D;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-basis: 250px; /* Adjust basis for the grid */
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 300px; /* Adjust image width */
+    height: 100px; /* Adjust image height */
+    margin-right: 20px;
+    border-radius: 0; /* Remove round shape */
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    background-color: #8F9E7D;
+    color: #54722E;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-link, .products-link {
+    color: #25481B; /* Dark green */
+}
+
+/* Styles specific to the "about.html" page */
+.about-paragraph {
+    font-family: 'Lucida Bright', serif;
+    font-size: 20px;
+}
+
+/* banner.css */
+
+.banner {
+  background-image: url('images/logo.png'); /* Set logo as background image */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust height as needed */
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.banner h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.banner .btn-green {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25481B; /* Dark green */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Additions for card grid */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Align cards in a row */
+  gap: 20px;
+
+}
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.cards {
+  display: flex;
+    flex-wrap: wrap;
+}
+.card{
+  flex-basis: 250px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+/* Update your existing CSS */
+
+.card {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Add some space between products */
+}
+
+.card img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Set height to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.card-details {
+    flex-grow: 1; /* Allow the details to take up remaining space */
+}
+
+.card h3 {
+    font-size: 20px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Update your existing CSS */
+
+.test {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #8F9E7D;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.typeform-card {
+    margin-bottom: 20px; /* Add space between Typeform and "Try Me" button */
+}
+
+.try-me {
+    display: flex;
+    justify-content: center; /* Center "Try Me" button horizontally */
+}
